@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while(true)
+do
+  a=$(ps -aux --noheading|tr -s " "|cut -d " " -f 2,3|sort -k 2|tail -1|cut -d " " -f 2)
+  
+  b=$(ps -aux --noheading|tr -s " "|cut -d " " -f 2,3|sort -k 2|tail -1|cut -d " " -f 1)
+    if($a4.0)
+           kill $b
+  fi
+
+done
+   
+
+
